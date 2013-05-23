@@ -1,0 +1,37 @@
+background yes
+use_xft yes
+xftfont Ubuntu Mono:size=12
+xftalpha 0.8
+out_to_console no
+mail_spool $MAIL
+update_interval 0.50
+total_run_times 0
+own_window yes
+own_window_type conky
+own_window_transparent yes
+own_window_colour hotpink
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+minimum_size 150 100
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color white
+default_shade_color black
+default_outline_color black
+
+gap_x 10
+gap_y 20
+
+no_buffers no
+uppercase no
+override_utf8_locale no
+use_spacer none
+
+alignment top_left
+
+
+TEXT
+${color #1992d6}${font Ubuntu Mono:size=15}Application Stats
+${color white}${font Ubuntu Mono:size=12}${execi 60 php ~/.conky-scripts/newrelic.php}
