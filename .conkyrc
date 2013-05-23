@@ -34,4 +34,4 @@ alignment top_left
 
 TEXT
 ${color #1992d6}${font Ubuntu Mono:size=15}Application Stats
-${color white}${font Ubuntu Mono:size=12}${execi 60 php ~/.conky-scripts/newrelic.php}
+${color white}${font Ubuntu Mono:size=12}${execi 60 php .conky-scripts/newrelic.php}
