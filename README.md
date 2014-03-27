@@ -1,8 +1,8 @@
-= New Relic Conky Widget
+#New Relic Conky Widget
 
 This conky widget will display your application's stats via New Relic. All you need is an API key!
 
-== Installation
+##Installation
 
 1. In your home directory, run:
 	
